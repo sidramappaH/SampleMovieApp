@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IuH-ML-CmL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Rated Movie Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TopRatedMovieController" customModule="SampleMovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3oC-Ad-oLB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="wd8-Tw-YLl" kind="embed" identifier="TopRated" id="IKI-8Q-m5G"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="UCo-hk-3Ok"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="-176"/>
+        </scene>
+        <!--Popular-->
+        <scene sceneID="CRZ-TH-cWD">
+            <objects>
+                <viewController id="Qp6-IO-io0" customClass="PopularViewController" customModule="SampleMovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rwh-ok-Lhm"/>
+                        <viewControllerLayoutGuide type="bottom" id="N4h-WX-uPz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TgR-vp-pII">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XVo-Gl-bcd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="wd8-Tw-YLl" kind="embed" identifier="Popular" id="u8b-b9-iZu"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Popular" id="kbt-nA-kJs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfB-0J-TXH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="1134"/>
+        </scene>
+        <!--Upcoming-->
+        <scene sceneID="nXg-1u-1NT">
+            <objects>
+                <viewController id="WAx-jC-O16" customClass="UpcomingMovieController" customModule="SampleMovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oKS-jZ-Rvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="NFW-Pp-hAT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TNQ-2T-rrS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hXU-ay-tbR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="wd8-Tw-YLl" kind="embed" identifier="Upcoming" id="Hg7-aJ-Euy"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upcoming" id="mpR-PD-5JB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzh-28-FQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="474"/>
+        </scene>
+        <!--Embedded View Controller-->
+        <scene sceneID="wEl-ht-6Sd">
+            <objects>
+                <viewController id="wd8-Tw-YLl" customClass="EmbeddedViewController" customModule="SampleMovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N07-aa-ScD"/>
+                        <viewControllerLayoutGuide type="bottom" id="lIj-1l-Oa0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cGX-zU-cOr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EQF-5i-ZLM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lIj-1l-Oa0" firstAttribute="top" secondItem="EQF-5i-ZLM" secondAttribute="bottom" id="FWR-2o-uaT"/>
+                            <constraint firstAttribute="trailing" secondItem="EQF-5i-ZLM" secondAttribute="trailing" id="J7t-Es-VCo"/>
+                            <constraint firstItem="EQF-5i-ZLM" firstAttribute="leading" secondItem="cGX-zU-cOr" secondAttribute="leading" id="RNb-9z-qAh"/>
+                            <constraint firstItem="EQF-5i-ZLM" firstAttribute="top" secondItem="N07-aa-ScD" secondAttribute="bottom" id="hdY-PM-ezp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1h-mt-R9c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2418" y="255"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z7M-uf-Aqa">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IuH-ML-CmL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HaN-xq-Ahh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="0u8-0b-gbn"/>
+                        <segue destination="WAx-jC-O16" kind="relationship" relationship="viewControllers" id="8Af-iT-hOD"/>
+                        <segue destination="Qp6-IO-io0" kind="relationship" relationship="viewControllers" id="QCT-Kx-YDu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfe-c0-xOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="163"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="u8b-b9-iZu"/>
+    </inferredMetricsTieBreakers>
+</document>
